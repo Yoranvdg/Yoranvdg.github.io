@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yoran Van de Gucht | Digitaal Portfolio</title>
+    <style>
+      :root {
+        --primary: #1e3a8a;
+        --secondary: #3b82f6;
+        --accent: #00d2ff;
+        --bg-color: #0f172a; /* Diepe, moderne donkere tech-achtergrond */
+        --card-bg: #1e293b; /* Donkere, strakke kaartjes */
+        --text-color: #f8fafc; /* Witte/lichte tekst voor leesbaarheid */
+        --text-light: #94a3b8; /* Zachter grijs voor subtekst */
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.7;
+        color: var(--text-color);
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: var(--bg-color);
+      }
+
+      header {
+        background: linear-gradient(135deg, #1e3a8a, #2563eb);
+        color: #fff;
+        padding: 40px 20px;
+        text-align: center;
+        border-radius: 12px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      header h1 {
+        margin: 0 0 10px 0;
+        font-size: 2.5rem;
+        letter-spacing: 0.5px;
+      }
+
+      header p {
+        font-size: 1.1rem;
+        opacity: 0.9;
+        margin: 0;
+      }
+
+      /* Navigatie / Snelle links bovenaan */
+      .quick-nav {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        margin-top: 20px;
+        flex-wrap: wrap;
+      }
+
+      .quick-nav a {
+        color: #fff;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 6px 14px;
+        border-radius: 20px;
+        text-decoration: none;
+        font-size: 0.9rem;
+        transition: all 0.2s;
+      }
+
+      .quick-nav a:hover {
+        background: var(--secondary);
+        border-color: var(--secondary);
+      }
+
+      section {
+        background: var(--card-bg);
+        margin-top: 25px;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        border-left: 5px solid var(--secondary);
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+        transition:
+          transform 0.2s,
+          box-shadow 0.2s;
+      }
+
+      section:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      }
+
+      h2 {
+        color: #60a5fa; /* Heldere blauwe accentkleur voor kopjes */
+        border-bottom: 2px solid #334155;
+        padding-bottom: 10px;
+        margin-top: 0;
+        font-size: 1.5rem;
+      }
+
+      ul {
+        padding-left: 20px;
+      }
+
+      li {
+        margin-bottom: 10px;
+      }
+
+      .sub-list {
+        margin-top: 8px;
+        margin-bottom: 10px;
+        color: #cbd5e1;
+      }
+
+      /* Stijlvolle knoppen met doorklikmogelijkheid */
+      .btn-container {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: var(--secondary);
+        color: white;
+        padding: 12px 22px;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: bold;
+        transition: all 0.2s;
+      }
+
+      .btn-linkedin {
+        background: #0077b5;
+      }
+
+      .btn-linkedin:hover {
+        background: #006097;
+      }
+
+      .btn-github {
+        background: #334155;
+        border: 1px solid #475569;
+      }
+
+      .btn-github:hover {
+        background: #475569;
+      }
+
+      .btn-email {
+        background: #059669;
+      }
+
+      .btn-email:hover {
+        background: #047857;
+      }
+
+      .btn:hover {
+        transform: translateY(-1px);
+        filter: brightness(1.1);
+      }
+
+      /* Stijl voor links in tekst */
+      a.text-link {
+        color: #60a5fa;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      a.text-link:hover {
+        text-decoration: underline;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 40px;
+        color: var(--text-light);
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Yoran Van de Gucht</h1>
+      <p>System- en netwerkbeheer | Digitaal Portfolio</p>
+
+      <!-- Snelle interne navigatie -->
+      <div class="quick-nav">
+        <a href="#over-mij">Over mij</a>
+        <a href="#testen">Zelfreflectie</a>
+        <a href="#skills">Technische Kennis</a>
+        <a href="#projecten">Projecten</a>
+        <a href="#extras">Extra's</a>
+      </div>
+    </header>
+
+    <section id="over-mij">
+      <h2>Over mij & Karaktereigenschappen</h2>
+      <p>
+        Welkom op mijn digitale portfolio voor HoGent! Ik ben gepassioneerd door
+        technologie en klaar om mijn passie op de arbeidsmarkt te tonen.
+      </p>
+      <p>
+        <strong>Karaktereigenschappen & Future proof skills:</strong>
+        Leergierig, probleemoplossend, teamplayer, stressbestendig en
+        resultaatgericht.
+      </p>
+
+      <!-- Doorklikknoppen (LinkedIn, GitHub en e-mail) -->
+      <div class="btn-container">
+        <a
+          href="https://www.linkedin.com/in/yoran-van-de-gucht-7b5a83333/"
+          class="btn btn-linkedin"
+          target="_blank"
+        >
+          🔗 LinkedIn Profiel
+        </a>
+        <a
+          href="https://github.com/yoranvdg"
+          class="btn btn-github"
+          target="_blank"
+        >
+          🐙 GitHub Profiel
+        </a>
+        <a href="mailto:yoranvdg@hotmail.com" class="btn btn-email">
+          ✉️ Contacteer mij
+        </a>
+      </div>
+    </section>
+
+    <section id="testen">
+      <h2>Zelfreflectie & Testen</h2>
+      <p>
+        In het kader van personal branding en zelfontwikkeling heb ik volgende
+        testen doorlopen:
+      </p>
+      <ul>
+        <li>
+          <strong>Scheintest:</strong> Zekerheid en sociale contacten zijn voor
+          mij een zeer belangrijk aspect, onafhankelijkheid is voor mij minder
+          belangrijk.
+        </li>
+        <li>
+          <strong>MyCareerCompanion test:</strong>
+          <ul class="sub-list">
+            <li>
+              <strong>Generieke competenties:</strong> Communicatie,
+              interpersoonlijke vaardigheden, carrièrecompetenties, werken in
+              teamverband en problemen oplossen.
+            </li>
+            <li>
+              <strong>Jobspecifieke competenties:</strong> Kennis van
+              IT-infrastructuur, analytische softwaretoepassingen, netwerken en
+              relaties opbouwen, en IT-ontwikkeling.
+            </li>
+            <li>
+              <strong>Interesses:</strong> Ondernemend, sociaal en realistisch.
+            </li>
+            <li>
+              <strong>Carrière-drijfveren:</strong> Gezonde work-life balans,
+              teamwerk, zekerheid en stabiliteit, sociale bijdrage, en
+              professionele/technische uitmuntendheid.
+            </li>
+            <li>
+              <strong>Praktische voorkeuren:</strong> Maximaal 1u per dag
+              pendelen (enkele reis), maximaal 10% van de tijd in het
+              buitenland, en vaste werktijden met een regelmatig schema.
+            </li>
+            <li>
+              <strong>Talenkennis:</strong> 5 talen gekend (waaronder Nederlands
+              als moedertaal).
+            </li>
+            <li>
+              <strong>Bedrijfscultuur:</strong> Sluit aan bij een “clan” en
+              “structure” cultuur.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>Big 5-test:</strong> Volgens deze test ben ik een extraverte
+          en aangename persoon die goed kan samenwerken in groep en de tijd
+          efficiënt kan indelen, waardoor deadlines vaak op tijd gehaald worden.
+        </li>
+        <li>
+          <strong>Belbin test:</strong> Volgens deze test ben ik een resource
+          investigator, dit betekent dat ik iemand ben die zeer veel mensen
+          kent, wat goed is om nieuwe contacten binnen te halen.
+        </li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h2>Technische Kennis</h2>
+      <ul>
+        <li>
+          <strong>Talen:</strong> Python, JavaScript, HTML/CSS, Bash,
+          Shellscripting...
+        </li>
+        <li><strong>Tools:</strong> Git, GitHub, VS Code, SSH...</li>
+        <li>
+          <strong>Infrastructuur, Cloud & DevOps (Tech & Trend):</strong>
+          Docker, AWS (Amazon Web Services), Microsoft Azure
+        </li>
+      </ul>
+    </section>
+
+    <section id="projecten">
+      <h2>Projecten (1e - 3e jaar) Hogeschool Gent</h2>
+      <p>
+        Een overzicht van praktijkgerichte projecten uit mijn schoolcarrière:
+      </p>
+      <ul>
+        <li>
+          <strong>System Engineering Lab (1e jaar):</strong> Basistechnieken in
+          verband met Git, Microsoft Azure en troubleshooting.
+        </li>
+        <li>
+          <strong>System Engineering Project (2e jaar):</strong> Simulatie van
+          een bedrijfsnetwerk waarbij gewerkt werd met Linux, Windows Server,
+          Cisco Packet Tracer, etc.
+        </li>
+      </ul>
+    </section>
+
+    <section id="extras">
+      <h2>Hackathons, Workshops & Extra's</h2>
+      <p>Naast de vaste lessen nam ik ook deel aan extra leermomenten:</p>
+      <ul>
+        <li><strong>Hackathons:</strong> Cybersecurity Challenge Belgium</li>
+        <li>
+          <strong>Workshops & Extra's:</strong> IT-alumni panelavond HoGent,
+          avondsessie Hack Your Admin, Workshop Godot
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>© 2026 Yoran Van de Gucht</p>
+    </footer>
+  </body>
+</html>
